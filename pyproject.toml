@@ -5,7 +5,6 @@ description = "Quick visualization of geographical locations"
 authors = ["arnrxn"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -14,21 +13,10 @@ geopandas = "^0.14.1"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.11.0"
 ruff = "^0.1.6"
 pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-#[tool.poetry.scripts]
-#test = "PYTHONPATH=. pytest"
-#
-#[tool.pytest.ini_options]
-#minversion = "6.0"
-#addopts = "-ra -q"
-#testpaths = ["tests"]
-#env = [
-#    "PYTHONPATH=."
-#]
