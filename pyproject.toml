@@ -22,13 +22,13 @@ pytest = "^7.4.3"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.scripts]
-test = "PYTHONPATH=. pytest"
-
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q"
-testpaths = ["tests"]
-env = [
-    "PYTHONPATH=."
-]
+#[tool.poetry.scripts]
+#test = "PYTHONPATH=. pytest"
+#
+#[tool.pytest.ini_options]
+#minversion = "6.0"
+#addopts = "-ra -q"
+#testpaths = ["tests"]
+#env = [
+#    "PYTHONPATH=."
+#]
